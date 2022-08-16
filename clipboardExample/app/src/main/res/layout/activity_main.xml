@@ -10,14 +10,14 @@
         android:layout_marginTop="150dp"
         android:text="@string/enter_text_to_copy"
         />
+
     <EditText
         android:id="@+id/txtCopy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:text="@string/welcome_to_tutlane"
-        android:ems="10">
-    </EditText>
+        android:ems="10"
+        android:text="WElcome"></EditText>
     <Button
         android:id="@+id/btnCopy"
         android:layout_width="wrap_content"
