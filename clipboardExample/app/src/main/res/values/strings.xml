@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">clipboardExample</string>
+    <string name="enter_text_to_copy">Enter Text to Copy</string>
+    <string name="welcome_to_tutlane">Welcome to Tutlane</string>
+    <string name="copy_data_to_clipboard">Copy Data to Clipboard</string>
+    <string name="show_copied_data">Show Copied Data</string>
+    <string name="show_clipboard_data">Show Clipboard Data</string>
+</resources>
