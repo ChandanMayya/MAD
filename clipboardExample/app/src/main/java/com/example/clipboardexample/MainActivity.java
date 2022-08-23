@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText ptxt;
     private Button btncpy;
     private Button btnpst;
+    private Button btnCLr;
     private ClipboardManager clipboardManager;
     private ClipData clipData;
 
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         ptxt = (EditText)findViewById(R.id.txtShow);
         btncpy = (Button)findViewById(R.id.btnCopy);
         btnpst = (Button)findViewById(R.id.btnShow);
+        btnCLr= (Button)findViewById(R.id.btnClr);
         clipboardManager = (ClipboardManager)getSystemService(Context.CLIPBOARD_SERVICE);
         btncpy.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,5 +50,13 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"Data Pasted from Clipboard",Toast.LENGTH_SHORT).show();
             }
         });
+        btnCLr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ctxt.setText("");
+                ptxt.setText("");
+            }
+        });
     }
+
 }
